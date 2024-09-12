@@ -21,6 +21,7 @@ module.exports = {
         'v3-primary': '#c7f284',
         'v3-modal': '#222B33',
         'v2-lily': '#E8F9FF',
+        'red-primary': 'rgb(255, 63, 60)',
       },
       fontSize: {
         xxs: ['0.625rem', '1rem'],
@@ -42,13 +43,15 @@ module.exports = {
             '-webkit-filter': 'hue-rotate(-360deg)',
           },
         },
+        'scroll-left-right': {
+          '0%, 100%': { transform: 'translateX(100%)' },
+          '50%': { transform: 'translateX(-100%)' },
+        },
       },
       animation: {
         shine: 'shine 3.5s linear infinite',
         hue: 'hue 10s infinite linear',
-      },
-      boxShadow: {
-        'swap-input-dark': '0px 2px 16px rgba(199, 242, 132, 0.25)',
+        'scroll-left-right': 'scroll-left-right 3s linear infinite',
       },
     },
   },
